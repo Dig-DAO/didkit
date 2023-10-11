@@ -76,23 +76,3 @@ DIDKit can be used in any of the following ways:
 [rustup]: https://rustup.rs/
 [Cargo]: https://doc.rust-lang.org/cargo/
 [ssi]: https://github.com/spruceid/ssi
-
-## build
-```
-sh build.sh
-```
-`didkit-wasm-node`, `didkit-wasm` ディレクトリの中にbuildの成果物が出力される。
-
-それぞれ、`.gitignore`も出力されるので削除して、成果物をpushする。
-
-## 使用例
-```json
-"dependencies": {
-  "@dig-dao/didkit": "https://github.com/Dig-DAO/didkit.git"
-}
-```
-
-```js
-import { verifyCredential } from "@dig-dao/didkit/didkit-wasm-node"
-import { issueCredential } from "@dig-dao/didkit/didkit-wasm"
-```
